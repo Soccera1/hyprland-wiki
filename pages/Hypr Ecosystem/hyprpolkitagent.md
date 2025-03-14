@@ -16,8 +16,7 @@ Add `exec-once = systemctl --user start hyprpolkitagent` to your Hyprland config
 
 If Hyprland is started with [uwsm](../../Useful-Utilities/Systemd-start), you can autostart the polkit agent with the command `systemctl --user enable --now hyprpolkitagent.service`.
 
-On distributions that use a different init system, such as Gentoo, it may be
-necessary to use
+If you are using a distribution that does not use systemd such as Devuan, you may need to add
 `exec-once=/usr/lib64/libexec/hyprpolkitagent` instead.
 
 Other possible paths include
